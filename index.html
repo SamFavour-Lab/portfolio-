@@ -132,150 +132,115 @@
 
 <section id="projects">
 
-    <h2>Featured Projects</h2>
 
+    <h2>Featured Projects (AI Automation Case Studies)</h2>
+
+    <!-- PROJECT 1 -->
     <div class="project">
 
         <h3>🤖 AI Customer Support Ticket Automation</h3>
 
-        <img 
-    src="https://raw.githubusercontent.com/SamFavour-Lab/ai-customer-support-ticket-automation/main/assets/screenshots/workflow-overview.png"
-    alt="AI Customer Support Ticket Automation Workflow"
-    class="project-image">
-        <p>
-            Automatically processes incoming customer emails, uses AI to categorize and prioritize support requests, creates Airtable support tickets, and sends acknowledgment emails.
-        </p>
+        <p><strong>Problem:</strong> Companies receive large volumes of customer emails, making it difficult to manually categorize, prioritize, and respond quickly.</p>
 
-        <p><strong>Business Value:</strong> Reduces manual ticket triage, speeds up response times, and improves customer support efficiency.</p>
+        <p><strong>Solution:</strong> Built an AI-powered system that processes Gmail messages, analyzes them with an AI Agent, creates structured support tickets in Airtable, and sends instant responses.</p>
 
-        <p><strong>Technologies:</strong> n8n • Gmail Trigger • Gmail • Groq Chat Model • AI Agent • Structured Output Parser • Airtable • If (Conditional)</p>
+        <p><strong>Workflow:</strong> Gmail Trigger → AI Agent (Groq) → Structured Output Parser → Airtable → Gmail Response</p>
 
-        <a href="https://github.com/SamFavour-Lab/ai-customer-support-ticket-automation" class="btn" target="_blank">View GitHub Repository</a>
+        <p><strong>Business Impact:</strong> Faster response time, reduced manual workload, improved customer satisfaction, scalable support system.</p>
 
     </div>
 
+    <!-- PROJECT 2 -->
     <div class="project">
 
-        <h3>AI Lead Qualification & CRM Automation</h3>
+        <h3>💰 Unpaid Tuition Reminder Automation</h3>
 
-        <img
-    src="https://raw.githubusercontent.com/SamFavour-Lab/ai-lead-qualification-crm-automation/main/assets/screenshots/workflow-overview.png"
-    alt="AI Lead Qualification & CRM Automation Workflow"
-    class="project-image">
-        
-        <p>
-            Automatically processes new lead information from Google Sheets, enriches the data using AI, creates CRM records, and sends notification emails.
-        </p>
+        <p><strong>Problem:</strong> Manual tracking of unpaid tuition causes missed payments and delayed follow-ups.</p>
 
-        <p><strong>Business Value:</strong> Reduces manual CRM work, speeds up lead processing, and improves sales efficiency.</p>
+        <p><strong>Solution:</strong> Scheduled system that detects overdue students and sends automated email reminders.</p>
 
-        <p><strong>Technologies:</strong> n8n • Google Sheets Trigger • Groq Chat Model • Basic LLM Chain • Airtable • Gmail</p>
+        <p><strong>Workflow:</strong> Schedule Trigger → Airtable Search → Filter → Gmail Notification</p>
 
-        <a href="https://github.com/SamFavour-Lab/ai-lead-qualification-crm-automation" class="btn" target="_blank">View GitHub Repository</a>
+        <p><strong>Business Impact:</strong> Improves cash flow, reduces manual follow-up, ensures timely payments.</p>
 
     </div>
 
+    <!-- PROJECT 3 -->
     <div class="project">
 
-        <h3>AI Social Media Content Engine</h3>
+        <h3>📊 Daily Sales Reporting Automation</h3>
 
-        <img
-    src="https://raw.githubusercontent.com/SamFavour-Lab/ai-social-media-content-engine/main/assets/screenshots/workflow-overview.png"
-    alt="AI Social Media Content Engine Workflow"
-    class="project-image">
-        
-        <p>
-            Monitors RSS feeds, fetches articles, generates AI-powered social media posts, logs them in Google Sheets, and shares them with the marketing team via Slack.
-        </p>
+        <p><strong>Problem:</strong> Businesses waste time manually preparing daily sales reports.</p>
 
-        <p><strong>Business Value:</strong> Automates content creation, increases marketing productivity, and maintains a consistent publishing schedule.</p>
+        <p><strong>Solution:</strong> Google Sheets data is processed using JavaScript and automatically sent via email.</p>
 
-        <p><strong>Technologies:</strong> n8n • RSS Feed Trigger • HTTP Request • JavaScript Code • Groq Chat Model • Basic LLM Chain • Edit Fields • Google Sheets • Slack</p>
+        <p><strong>Workflow:</strong> Manual Trigger → Google Sheets → JavaScript → Gmail Report</p>
 
-        <a href="https://github.com/SamFavour-Lab/ai-social-media-content-engine" class="btn" target="_blank">View GitHub Repository</a>
+        <p><strong>Business Impact:</strong> Saves time, improves decision-making, reduces errors.</p>
 
     </div>
 
+    <!-- PROJECT 4 -->
     <div class="project">
 
-        <h3>Daily Sales Reporting Automation</h3>
-        
-        <img
-    src="https://raw.githubusercontent.com/SamFavour-Lab/daily-sales-reporting-automation/main/assets/screenshots/workflow-overview.png"
-    alt="Daily Sales Reporting Automation Workflow"
-    class="project-image">
-        <p>
-            Retrieves sales data from Google Sheets, processes key business metrics using JavaScript, and automatically emails daily sales reports.
-        </p>
+        <h3>📢 AI Social Media Content Engine</h3>
 
-        <p><strong>Business Value:</strong> Eliminates manual reporting, provides real-time sales insights, and supports faster business decisions.</p>
+        <p><strong>Problem:</strong> Content teams struggle to consistently create posts from new articles.</p>
 
-        <p><strong>Technologies:</strong> n8n • Manual Trigger • Google Sheets • JavaScript Code • Gmail</p>
+        <p><strong>Solution:</strong> RSS feeds are monitored and AI generates social media content automatically.</p>
 
-        <a href="https://github.com/SamFavour-Lab/daily-sales-reporting-automation" class="btn" target="_blank">View GitHub Repository</a>
+        <p><strong>Workflow:</strong> RSS Trigger → HTTP Request → JavaScript → AI Model → Google Sheets → Slack</p>
+
+        <p><strong>Business Impact:</strong> Faster content creation, consistent posting, reduced workload.</p>
 
     </div>
 
+    <!-- PROJECT 5 -->
     <div class="project">
 
-        <h3>AI Customer Service Auto-Responder</h3>
+        <h3>🤖 AI Sales Assistant Chatbot</h3>
 
-        <img
-    src="https://raw.githubusercontent.com/SamFavour-Lab/ai-customer-service-auto-responder/main/assets/screenshots/workflow-overview.png"
-    alt="AI Customer Service Auto-Responder Workflow"
-    class="project-image">
-        <p>
-            Uses AI to generate intelligent customer email replies automatically and delivers them through Gmail.
-        </p>
+        <p><strong>Problem:</strong> Businesses need 24/7 customer engagement and lead capture.</p>
 
-        <p><strong>Business Value:</strong> Improves response speed, ensures consistent communication, and enhances customer satisfaction.</p>
+        <p><strong>Solution:</strong> AI chatbot with memory, CRM logging, and scheduling capabilities.</p>
 
-        <p><strong>Technologies:</strong> n8n • Gmail • Groq Chat Model • Basic LLM Chain</p>
+        <p><strong>Workflow:</strong> Chat Trigger → AI Agent → Memory → Google Sheets → Calendar</p>
 
-        <a href="https://github.com/SamFavour-Lab/ai-customer-service-auto-responder" class="btn" target="_blank">View GitHub Repository</a>
+        <p><strong>Business Impact:</strong> 24/7 support, better lead capture, automated sales assistance.</p>
 
     </div>
 
+    <!-- PROJECT 6 -->
     <div class="project">
 
-        <h3>Automated Tuition Reminder System</h3>
+        <h3>📈 AI Lead Qualification & CRM Automation</h3>
 
-        <img
-    src="https://raw.githubusercontent.com/SamFavour-Lab/automated-tuition-reminder-system/main/assets/screenshots/workflow-overview.png"
-    alt="Automated Tuition Reminder System Workflow"
-    class="project-image">
-        <p>
-            Automatically identifies students with unpaid tuition and sends personalized reminder emails on a scheduled basis.
-        </p>
+        <p><strong>Problem:</strong> Businesses struggle to qualify and manage incoming leads manually.</p>
 
-        <p><strong>Business Value:</strong> Improves payment collection, reduces manual follow-up, and saves administrative time.</p>
+        <p><strong>Solution:</strong> AI analyzes lead data, enriches it, and updates CRM automatically.</p>
 
-        <p><strong>Technologies:</strong> n8n • Schedule Trigger • Airtable • Filter • Gmail</p>
+        <p><strong>Workflow:</strong> Google Sheets → AI Analysis → Airtable CRM → Gmail Notification</p>
 
-        <a href="https://github.com/SamFavour-Lab/automated-tuition-reminder-system" class="btn" target="_blank">View GitHub Repository</a>
+        <p><strong>Business Impact:</strong> Faster lead processing, better sales efficiency, improved conversion tracking.</p>
 
     </div>
 
+    <!-- PROJECT 7 -->
     <div class="project">
 
-        <h3>AI Sales Assistant Chatbot</h3>
+        <h3>📩 AI Customer Service Auto Responder</h3>
 
-        <img
-    src="https://raw.githubusercontent.com/SamFavour-Lab/ai-sales-assistant-chatbot/main/assets/screenshots/workflow-overview.png"
-    alt="AI Sales Assistant Chatbot Workflow"
-    class="project-image">
-        <p>
-            An AI-powered sales chatbot that answers customer questions, remembers conversation history, logs interactions, and schedules appointments automatically.
-        </p>
+        <p><strong>Problem:</strong> Customers expect fast replies, but manual responses are slow.</p>
 
-        <p><strong>Business Value:</strong> Delivers 24/7 customer support, captures leads, improves engagement, and automates appointment scheduling.</p>
+        <p><strong>Solution:</strong> AI generates instant email replies using Gmail automation.</p>
 
-        <p><strong>Technologies:</strong> n8n • Chat Trigger • AI Agent • Groq Chat Model • Simple Memory • Google Sheets • Code Tool • Google Calendar</p>
+        <p><strong>Workflow:</strong> Gmail Trigger → AI Response Generator → Gmail Send</p>
 
-        <a href="https://github.com/SamFavour-Lab/ai-sales-assistant-chatbot" class="btn" target="_blank">View GitHub Repository</a>
+        <p><strong>Business Impact:</strong> Faster response time, improved customer satisfaction, reduced workload.</p>
 
     </div>
 
+    
 </section>
 
 <section id="contact">
