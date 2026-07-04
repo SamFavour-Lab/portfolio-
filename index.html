@@ -146,7 +146,7 @@
 
         <p><strong>Solution:</strong> Built an AI-powered system that processes Gmail messages, analyzes them with an AI Agent, creates structured support tickets in Airtable, and sends instant responses.</p>
 
-        <p><strong>Workflow:</strong> Gmail Trigger → AI Agent (Groq) → Structured Output Parser → Airtable → Gmail Response</p>
+        <p><strong>Workflow:</strong> Gmail Trigger → Gmail Get a Message → AI Agent (Groq) → Structured Output Parser → Airtable (Create Ticket) → Conditional Logic → Gmail Response</p>
 
         <p><strong>Business Impact:</strong> Faster response time, reduced manual workload, improved customer satisfaction, scalable support system.</p>
   
@@ -223,17 +223,26 @@
     <!-- PROJECT 6 -->
     <div class="project">
 
-       <h3>📈 AI Lead Qualification & CRM Automation</h3>
+      <h3>📈 AI Lead Qualification & CRM Automation</h3>
 
-        <img src="https://raw.githubusercontent.com/SamFavour-Lab/ai-lead-qualification-crm-automation/main/assets/screenshots/workflow-overview.png" alt="AI Lead Qualification CRM Workflow" class="project-image">
+        <img src="https://raw.githubusercontent.com/SamFavour-Lab/ai-lead-qualification-crm-automation/main/assets/screenshots/workflow-overview.png" 
+        alt="AI Lead Qualification CRM Workflow" class="project-image">
 
-        <p><strong>Problem:</strong> Businesses struggle to qualify and manage incoming leads manually.</p>
+        <p><strong>Problem:</strong> Businesses receive large volumes of inbound leads but struggle to qualify, prioritize, and route them efficiently.</p>
 
-        <p><strong>Solution:</strong> AI analyzes lead data, enriches it, and updates CRM automatically.</p>
+        <p><strong>Solution:</strong> An AI-powered system that analyzes incoming lead data, classifies intent, and automatically routes leads into CRM pipelines with notifications.</p>
 
-        <p><strong>Workflow:</strong> Google Sheets → AI Analysis → Airtable CRM → Gmail Notification</p>
-
-        <p><strong>Business Impact:</strong> Faster lead processing, better sales efficiency, improved conversion tracking.</p>
+        <p><strong>Workflow:</strong> Airtable Trigger → Groq AI (Create JSON Chat Completion for Lead Scoring) → JSON Parse → Router</p>
+        
+        <ul>
+            <li><strong>Route A (Hot Leads):</strong> Airtable Update Record → Gmail Notification → Airtable Status Update</li>
+ 
+            <li><strong>Route B (Warm Leads):</strong> Airtable Update Record → Gmail Notification → Airtable Follow-up Stage Update</li>
+ 
+            <li><strong>Route C (Cold Leads):</strong> Airtable Update Record only (CRM tagging & segmentation)</li>
+        </ul>
+        
+        <p><strong>Business Impact:</strong> Improved lead qualification accuracy, faster sales response time, and better CRM organization for sales teams.</p>
 
     </div>
 
