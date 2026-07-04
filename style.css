@@ -304,3 +304,7 @@ section h2{
 body{
     background: linear-gradient(to bottom, #f5f7fb, #ffffff);
 }
+
+.hero p strong{
+    color:#0f172a;
+}
